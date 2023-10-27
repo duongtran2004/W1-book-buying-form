@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIÁO TRÌNH TIN HỌC VĂN PHÒNG</title>
+  </head>
+  <body>
+    <!-- TABLE -->
+    <table>
+      <tr>
+        <!-- table header -->
+        <th colspan="2">GIÁO TRÌNH TIN HỌC VĂN PHÒNG</th>
+        <!-- merge table's header cell with 2 columns -->
+      </tr>
+      <!-- book information 6 rows -->
+      <tr>
+        <td rowspan="6">
+          <!-- merge cover image with 6 rows -->
+          <img src="assets\text-book-cover.png" alt="text-book-cover" />
+        </td>
+        <td>Tác giả: <i>Phạm Quang Hiển</i></td>
+      </tr>
+      <!-- The column right next to image -->
+      <tr>
+        <td>Đồng tác giả: <i>Phạm Phương Hoa</i></td>
+      </tr>
+      <tr>
+        <td>Hiệu đính: <i>Hồng Phúc</i></td>
+      </tr>
+      <tr>
+        <td>Chủ Biên: <i>Quách Tuấn Ngọc</i></td>
+      </tr>
+      <tr>
+        <td>Nhà xuất bản: <b>Nhà xuất Thanh Niên</b></td>
+      </tr>
+      <tr>
+        <td>Chủ đề: <b>Tin học-Văn phòng</b></td>
+      </tr>
+      <!-- Book's content -->
+      <tr>
+        <td colspan="2">
+          <!-- merge book's content cell with 2 columns -->
+
+          <b>NỘI DUNG CỦA CUỐN</b>
+          <!-- cannot use heading here cause it would push text away from cell's top
+          margin -->
+
+          <ul>
+            <li>Giới thiệu tổng quát về MS-EXCE</li>
+            <li>Các thao tác cơ bản khi sử dụng MS - EXCEL</li>
+            <li>Danh sách phím tắt Excel</li>
+            <li>Trình bày bảng tính</li>
+            <li>SÁCH HỌC EXCEL hướng dẫn các hàm thường dùng</li>
+            <li>Nắm bắt được các lỗi sai thường gặp khi sử dụng hàm</li>
+            <li>Các thủ thuật nâng cao</li>
+            <li>Biết cách xử lý các lỗi trong quá trình làm việc</li>
+            <li>Các thao tác nâng cao thống kê, công thức mảng, định dạng</li>
+          </ul>
+
+          <u>
+            <i
+              ><span
+                >-Tất cả các kiến thức về MS - EXCEL được hệ thống đầy đủ và dễ
+                dàng học tập</span
+              ></i
+            ></u
+          >
+        </td>
+      </tr>
+      <tr>
+        <!-- merge price cell with 2 columns -->
+        <td colspan="2">
+          <b>Giá bán: 90.0000 VND/Cuốn</b>
+        </td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- FORM -->
+    <table>
+      <form action="" method="get">
+        <tr>
+          <th colspan="2"><b>FORM ĐĂNG KÍ MUA SÁCH</b></th>
+        </tr>
+        <tr>
+          <td><label for="name">Tên của bạn:</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone-number"
+              >Số điện thoại: <br />
+              <br
+            /></label>
+          </td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td><label for="address">Địa chỉ</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="quantity">Số lượng mua:</label></td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <!-- We must use in-line CSS here as it is more prioritized than external CSS to keep the border of the Submit Button  -->
+            <input style="border: 1px solid" type="submit" value="Mua ngay" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

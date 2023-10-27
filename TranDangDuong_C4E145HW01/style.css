@@ -1,0 +1,12 @@
+/* CSS Styling for table border of all cells */
+table,
+th,
+td {
+  border: 3px solid gray;
+  border-collapse: collapse;
+  /* use border-collapse to avoid overlapping border between cells */
+}
+input {
+  border: none;
+  outline: none;
+}
